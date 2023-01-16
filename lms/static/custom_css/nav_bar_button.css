@@ -1,0 +1,9 @@
+.global-header .nav-links .main .nav-item a {
+    color: #0075b4;
+    padding: 11px 25px 19px;
+    font-weight: 400;
+    display: inline-block;
+    margin-bottom: -10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+}
