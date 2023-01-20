@@ -22,7 +22,7 @@ enterprise_customer_link = get_enterprise_learner_portal(request)
   % if enterprise_customer_link:
     <a class="lg:mt-8" href="${settings.ENTERPRISE_LEARNER_PORTAL_BASE_URL}/${enterprise_customer_link.get('slug')}">
       <!--img class="logo" src="https://cms.cubite.io/uploads/logoipsum_logo_12_64f5dbc332.svg" alt="${_('{name} Dashboard').format(name=enterprise_customer_link.get('name'))}"/-->
-        <img class="logo" src="/static/astra_theme/images/logo.png" alt="${_('{name} Dashboard').format(name=enterprise_customer_link.get('name'))}"/>        
+        <img class="logo" src="/static/leapastra-theme/images/logo.png" alt="${_('{name} Dashboard').format(name=enterprise_customer_link.get('name'))}"/>        
         static/astra_theme/lms/static/images/logo.png
         % if settings.LOGO_IMAGE_EXTRA_TEXT == 'edge':
             <span class="font-italic"> | EDGE</span>
@@ -32,7 +32,7 @@ enterprise_customer_link = get_enterprise_learner_portal(request)
     <a class="lg:mt-8" href="${branding_api.get_home_url()}">
       <%block name="navigation_logo">
         <!--img  class="logo" src="https://cms.cubite.io/uploads/logoipsum_logo_12_64f5dbc332.svg" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/-->
-        <img  class="logo" src="/static/astra_theme/images/logo.png" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
+        <img  class="logo" src="/static/leapastra-theme/images/logo.png" alt="${_("{platform_name} Home Page").format(platform_name=static.get_platform_name())}"/>
         </%block>
         % if settings.LOGO_IMAGE_EXTRA_TEXT == 'edge':
             <span class="font-italic"> | EDGE</span>

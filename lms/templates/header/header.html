@@ -41,7 +41,7 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
     catch(e){window.attachEvent("onload", $buo_f)}
   </script>
 % endif
-
+<link rel="stylesheet" href="/static/leapastra-theme/fonts/stylesheet.css">
 <header class=" overflow-hidden border-transparent shadow-none border-opacity-0 global-header lg:mb-4 ${'slim' if course else ''}">
     % if use_cookie_banner:
         ${static.renderReact(
