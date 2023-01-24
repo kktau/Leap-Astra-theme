@@ -1,0 +1,59 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("FAQ")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+            <h2 class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white exensa"><%block name="pageheader">${page_header or _("Frequently asked questions")}</%block></h2>
+            <%block name="pagecontent">
+            
+            % if page_content: 
+                ${page_content}
+            % else: 
+            <div class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 ">    
+                <div>
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-black exensa  text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            What is Leap Astra?
+                        </h3>
+                        <p class="text-black exensa dark:text-gray-400">Leap Astra is an online education community that is passionate about Web3. Leap Astra’s mission is to educate, entreprenurialise and empower every Astronaut to join the web3 industry. Leap into web 3and soar beyond the stars</p>
+                    </div>
+
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-black exensa  text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            Who can take off with Leap Astra?
+                        </h3>
+                        <p class="text-black exensa dark:text-gray-400">Leap Astra is for all web 3 novices. As a Astranaut we will take you from beginner to skilled innovator so that you can build, grow and create in Web 3.</p>
+                    </div>
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-black exensa  text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            What exciting things are happening with Astra Take-off?
+                        </h3>
+                        <p class="text-black exensa dark:text-gray-400">Learn to Earn, Gamification and many more perks. This is a dynamic meta campus that evolves and grows according to industry and the Astranauts needs.</p>
+                    </div>
+
+                    <div class="mb-10">
+                        <h3 class="flex items-center mb-4 text-lg font-black exensa  text-gray-900 dark:text-white">
+                            <svg class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>
+                            Partner and Leap into the future
+                        </h3>
+                        <p class="text-black exensa dark:text-gray-400">Leap Astra’s core value is collaboration. We believe that only through collaboration will one be able to create a innovative metaverse<br>
+                            Please apply on our <a href="#">partnership page</a> to partner with us
+                        </p>
+                    </div>
+                </div>
+              
+                </div>
+                % endif
+                </%block>
+          
+            </div>
+        </div>
+    </section>
+</main>
