@@ -1,0 +1,20 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("About")}</%block>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("About")}</%block>
+        </h1>
+        <p class="font-medium exensa text-lg text-black">
+            Leap Astras's Vission is to create a skilled innovative Astranaut that will be able to build the future framework for a more advanced wab 3 metaverse galaxy. Web 3 astranauts are web 3 builders, creators and innovators. 
+        </p>
+
+        <p class="font-medium exensa text-lg text-black">
+            Leap Astras's Vission is to create a skilled innovative Astranaut that will be able to build the future framework for a more advanced wab 3 metaverse galaxy. Web 3 astranauts are web 3 builders, creators and innovators. 
+        </p>
+    </section>
+</main>
