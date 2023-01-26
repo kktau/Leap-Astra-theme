@@ -74,7 +74,7 @@
 }
 @font-face {
     font-family: 'Sabrione  Italic';
-    src: url(Sabrione-Italic.ttf);
+    src: url(Sabrione-Italic.ttf) format('truetype');
     font-style: italic;
 }
 .sabrion-italic{
